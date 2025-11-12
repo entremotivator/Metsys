@@ -108,10 +108,18 @@ with tabs[0]:
     
     st.markdown("---")
     st.subheader("Course Management Dashboard")
-    st.markdown("*The central hub for managing all educational content, tracking enrollments, and monitoring course performance.*")
     
-    # Note: In production, these would be actual uploaded images
-    st.info("📸 Screenshots showcase: Course Dashboard, Course Builder, Student Progress, Lesson Editor, Quiz Creation")
+    col1, col2 = st.columns(2)
+    with col1:
+        display_image_from_url(
+            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0376-50zas4gIR3kh7e7ym6rUCjgZz3hGjp.png",
+            "Performance Overview - Track sales and course metrics"
+        )
+    with col2:
+        display_image_from_url(
+            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0370-FEG2x22kbqC3QmQh7ZKfrNjYNGZkO6.png",
+            "Sales Reports - Detailed revenue analytics"
+        )
 
 # --- 2. Project Management (WP Manager) ---
 with tabs[1]:
@@ -183,6 +191,13 @@ with tabs[1]:
         "Active Projects Dashboard"
     )
 
+    st.markdown("---")
+    st.subheader("Multiple Project Views")
+    display_image_from_url(
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0390-4HbOVpUTjqLZ0hV1EN8mnlvfAmdAy9.png",
+        "Active Projects Dashboard - Task Lists, Kanban Boards & More"
+    )
+
 # --- 3. Appointments (Amelia Booking Pro) ---
 with tabs[2]:
     st.header("📅 Smart Appointment Scheduling System")
@@ -235,9 +250,11 @@ with tabs[2]:
         - **Multi-Language Support**: Send notifications in customer's language
         """)
     
+    st.markdown("---")
+    st.subheader("Team & Employee Management")
     display_image_from_url(
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0381-f6zUEOTAyHNyc87YrT4ejVhrEBqauS.png",
-        "Employee Management - Staff Members Overview"
+        "Employee Management - Staff Members, Scheduling & Availability"
     )
     
     st.markdown("---")
@@ -336,7 +353,7 @@ with tabs[4]:
     
     display_image_from_url(
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0376-50zas4gIR3kh7e7ym6rUCjgZz3hGjp.png",
-        "E-commerce Overview Dashboard"
+        "E-commerce Overview Dashboard - Sales, Orders & Performance Metrics"
     )
     
     col1, col2 = st.columns(2)
@@ -375,16 +392,19 @@ with tabs[4]:
         - **Multi-Currency**: Sell in multiple currencies worldwide
         """)
     
+    st.markdown("---")
+    st.subheader("Product Organization & Tags")
     display_image_from_url(
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0373-1UfNgnp2iBKxccZpIIFtM64onnIn2F.png",
-        "Product Tags Management"
+        "Product Tags Management - Organize products with tags and slugs"
     )
     
     st.markdown("---")
     
+    st.subheader("Product Attributes & Variations")
     display_image_from_url(
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0374-ESzBTzR3iJOQ2Rb2YMdV9UWcpgVaBr.png",
-        "Product Attributes Configuration"
+        "Product Attributes Configuration - Size, color, and custom variations"
     )
     
     st.markdown("""
@@ -678,7 +698,7 @@ with tabs[9]:
     
     display_image_from_url(
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0370-FEG2x22kbqC3QmQh7ZKfrNjYNGZkO6.png",
-        "Sales Reports & Analytics Dashboard"
+        "Sales Reports & Analytics Dashboard - Comprehensive business insights"
     )
     
     col1, col2 = st.columns(2)
@@ -712,6 +732,19 @@ with tabs[9]:
         """)
     
     st.markdown("---")
+    
+    st.subheader("Performance Dashboard Views")
+    col1, col2 = st.columns(2)
+    with col1:
+        display_image_from_url(
+            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0376-50zas4gIR3kh7e7ym6rUCjgZz3hGjp.png",
+            "Overview Dashboard - Key performance indicators"
+        )
+    with col2:
+        display_image_from_url(
+            "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0370-FEG2x22kbqC3QmQh7ZKfrNjYNGZkO6.png",
+            "Sales by Date - Track revenue trends over time"
+        )
     
     col1, col2 = st.columns(2)
     
@@ -764,7 +797,7 @@ with tabs[10]:
     
     display_image_from_url(
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0396-7AJiOtv3pzGKyVzTjw9tQ6OMvv8dW6.png",
-        "Media Library - Centralized Asset Management"
+        "Media Library - Centralized Asset Management with images and videos"
     )
     
     col1, col2 = st.columns(2)
@@ -801,6 +834,23 @@ with tabs[10]:
         - **Duplicate Detection**: Avoid duplicate uploads
         - **Secure Delivery**: Protected file delivery for paid content
         """)
+    
+    st.markdown("---")
+    st.subheader("🎬 Complete Media Asset Overview")
+    display_image_from_url(
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0396-7AJiOtv3pzGKyVzTjw9tQ6OMvv8dW6.png",
+        "Full Media Library View - Store and organize all your digital assets"
+    )
+    
+    st.markdown("""
+    ### Media Library Capabilities
+    The media library shown above demonstrates the comprehensive asset management system with:
+    - **Visual Grid Layout**: Easily browse through images and videos
+    - **Multiple File Types**: Support for images, videos, documents, and more
+    - **Quick Preview**: Thumbnail previews for instant recognition
+    - **Organized Storage**: Keep all marketing materials, course content, and business assets in one place
+    - **Fast Search**: Find any file quickly with intelligent search
+    """)
     
     st.markdown("""
     #### 🖼️ Image Optimization
